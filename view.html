@@ -5,16 +5,15 @@
 	</head>
 	<body>
 		<div id="pr">
-			<input v-model="message">
-			<button v-on:click="addList">add</button>
-			<ul>
-				<li v-for="(persona,text) in personas" >
-					<input type="checkbox" v.model="persona">
-					<p v-bind:class="(active:persona.isActive)">{{ persona.text }} </p>
-				</li>
-			</ul>
+			<listTab></listTab>
+			<aboutTab></aboutTab>
+			<expTab></expTab>
+			<eduTab></eduTab>
+			<skillTab></skillTab>
+			<interTab></interTab>
+			<awardTab></awardTab>
+			<proyectTab></proyectTab>
 		</div>
-		
 		<script src="model.js"></script>
 	</body>
 </html>
